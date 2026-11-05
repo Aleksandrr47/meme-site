@@ -20,6 +20,9 @@ export function Layout() {
           <NavLink to="/2026" className={navLinkClass}>
             2026
           </NavLink>
+          <NavLink to="/quiz" className={navLinkClass}>
+            Квиз
+          </NavLink>
         </nav>
       </header>
       <main className="main">

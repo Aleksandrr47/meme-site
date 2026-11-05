@@ -246,3 +246,11 @@ export const memesByYear: Record<MemeYear, Meme[]> = {
 export function getMemesForYear(year: MemeYear): Meme[] {
   return memesByYear[year]
 }
+
+export type MemeWithYear = Meme & { year: MemeYear }
+
+export function getAllMemesWithYear(): MemeWithYear[] {
+  return ([2025, 2026] as MemeYear[]).flatMap((year) =>
+    memesByYear[year].map((meme) => ({ ...meme, year })),
+  )
+}

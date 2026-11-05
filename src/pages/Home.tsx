@@ -30,6 +30,16 @@ export function Home() {
           <span className="year-card__cta">Смотреть →</span>
         </Link>
       </div>
+
+      <section className="quiz-teaser">
+        <h2 className="quiz-teaser__title">Проверь себя</h2>
+        <p className="quiz-teaser__text">
+          Квиз на 10 вопросов: угадай месяц, год или название мема из 2025 и 2026.
+        </p>
+        <Link to="/quiz" className="quiz-teaser__link">
+          Пройти квиз →
+        </Link>
+      </section>
     </div>
   )
 }
